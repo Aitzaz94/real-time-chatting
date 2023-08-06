@@ -1,0 +1,11 @@
+<%=form_for (:session) do |f| %>
+    <%# = render 'layouts/error_messages', f: f.object %>
+        
+    <!-- form_for @object, html: { multipart: true }, do |f| -->
+    <!-- form_for @object, html: { class: "classname" }, do |f| -->
+
+    <%= f.label :username, "Enter your name" %>
+    <%= f.text_field :username, autocomplete: 'off' %>
+
+    <%= f.submit "Sign in" %>    
+<% end %>
